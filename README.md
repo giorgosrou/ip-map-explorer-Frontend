@@ -4,7 +4,7 @@
 
 ## Introduction
 
-This is a coding test for the position of Full Stack Engineer at Skyqraft. The test is divided into two parts: a frontend part and a backend part. The frontend part is to be done in React and the backend part is to be done in Python. The test is expected to take approximately 4 hours to complete.
+This is a coding test for the position of Full Stack Engineer at Skyqraft. The test is divided into two parts: a frontend part and a backend part. The frontend part is to be done in React and the backend part is to be done in (preferrably) Python. The test is expected to take approximately 4 hours to complete.
 
 > We have designed this test in a way that would be as fun as possible, and give you the ability to host it and showcase on your github profile in the future. We hope you enjoy it!
 
