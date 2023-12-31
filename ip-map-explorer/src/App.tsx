@@ -1,13 +1,15 @@
 import React from 'react';
+import GoogleMap from './Components/GoogleMap';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div>
+      <header>
         <p>
           Hello world map!
         </p>
       </header>
+      <GoogleMap />
     </div>
   );
 }
