@@ -5,7 +5,6 @@ import CustomMap from "./CustomMap";
 
 const GoogleMap: React.FC = () => {
     const APIKey = process.env.REACT_APP_GOOGLE_MAPS_API_KEY || '';
-    console.log('API Key:', APIKey);
 
     return (
         <APIProvider apiKey={APIKey}>
@@ -16,4 +15,4 @@ const GoogleMap: React.FC = () => {
     )
 }
 
-export default GoogleMap
+export default GoogleMap;
