@@ -7,35 +7,30 @@ const CustomMap: React.FC = () => {
 
     useEffect(() => {
         fetch('http://localhost:3000/getip')
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                return response.text(); // Try parsing as text first
-            })
-            .then(text => {
-                try {
-                    const data = JSON.parse(text); // Try parsing as JSON
-                    setUserIP(data.ip);
-                } catch (error) {
-                    console.error('Error parsing JSON:', error);
-                    setUserIP('Invalid IP data');
-                }
-            })
-            .catch(error => {
-                console.error('Error fetching IP:', error);
-            });
-    }, []);
+          .then((response) => response.text())
+          .then((text) => {
+            try {
+              const data = JSON.parse(text);
+              setUserIP(data.ip);
+            } catch (error) {
+              console.error('Error parsing JSON:', error);
+              setUserIP('Invalid IP data');
+            }
+          })
+          .catch((error) => {
+            console.error('Error fetching IP:', error);
+          });
+      }, []);
 
     return(
         <>
             <Map
-                zoom={9.2}
+                zoom={11.5}
                 center={positionIP}
                 gestureHandling={'greedy'}
                 disableDefaultUI={false}
             />
-            <p className="text-black"> {userIP}</p>
+            <p className="text-white font-bold ml-2"> Your current IP address is: {userIP}</p>
         </>
 
 

@@ -8,7 +8,7 @@ const GoogleMap: React.FC = () => {
 
     return (
         <APIProvider apiKey={APIKey}>
-            <div className="flex justify-center border-2 border-black" style={{ height: 750, width: 750 }}>
+            <div className="flex justify-center items-center border-2 border-white" style={{ margin: '50px', height: 'calc(100vh - 40px)', width: 'calc(100vw - 40px)' }}>
                 <CustomMap />
             </div>
         </APIProvider>

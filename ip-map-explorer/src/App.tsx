@@ -4,7 +4,7 @@ import Logo from './Components/Logo';
 
 function App() {
   return (
-    <div>
+    <div className='bg-gradient-to-br from-purple-600 to-indigo-600 min-h-screen'>
       <Logo />
       <GoogleMap />
     </div>
