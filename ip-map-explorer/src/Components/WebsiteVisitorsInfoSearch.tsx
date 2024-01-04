@@ -7,7 +7,7 @@ const WebsiteVisitorsInfoSearch: React.FC = () => {
 
 
   const handleSearch = () => {
-    fetch(`http://localhost:3000/users-count?country=${selectedCountry}`)
+    fetch(`https://ip-map-explorer-backend.onrender.com/users-count?country=${selectedCountry}`)
       .then((response) => response.json())
       .then((data) => {
         console.log(data.totalUsers);

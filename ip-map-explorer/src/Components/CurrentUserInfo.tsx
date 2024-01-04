@@ -10,7 +10,7 @@ const CurrentUserInfo: React.FC = () => {
 
     //Call the ip-api from the backend to retrieve ip, country, region and city of the current user
     useEffect(() => {
-        fetch('https://face-detection-backend-0tsv.onrender.com/ipapi')
+        fetch('https://ip-map-explorer-backend.onrender.com/ipapi')
             .then((response) => response.json())
             .then((data) => {
             setUserIP(data.query);
