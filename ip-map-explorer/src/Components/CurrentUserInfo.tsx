@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { FaFlag, FaMapMarkerAlt } from "react-icons/fa"
+import { FaFlag, FaMapMarkerAlt } from "react-icons/fa";
 
 const CurrentUserInfo: React.FC = () => {
 
