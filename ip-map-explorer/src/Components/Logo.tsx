@@ -1,6 +1,6 @@
 import React from "react";
-import { Tilt } from 'react-tilt'
-const logo = require ("../Assets/worldmap.png")
+import { Tilt } from 'react-tilt';
+const logo = require ("../Assets/worldmap.png");
 
 
 const Logo: React.FC = () => {
@@ -12,7 +12,6 @@ const Logo: React.FC = () => {
                 </div>
             </Tilt>
         </div>
-
     )
 }
 
