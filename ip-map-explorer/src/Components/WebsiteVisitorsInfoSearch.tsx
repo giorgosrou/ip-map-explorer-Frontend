@@ -10,6 +10,7 @@ const WebsiteVisitorsInfoSearch: React.FC = () => {
     fetch(`http://localhost:3000/users-count?country=${selectedCountry}`)
       .then((response) => response.json())
       .then((data) => {
+        console.log(data.totalUsers);
         setTotalUsers(data.totalUsers);
       })
       .catch((error) => {
